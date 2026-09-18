@@ -4,6 +4,8 @@ iPad-first PWA for planning a day as a stack of intention blocks—not a grid of
 
 **Short name on the home screen:** Intentional
 
+**Live app:** [daily-intentionality-scheduler-jeizu-projects.vercel.app](https://daily-intentionality-scheduler-jeizu-projects.vercel.app)
+
 ## What it does
 
 - **Stack from a start time** — Set “Day starts,” add blocks in order; clock times are computed from durations (including a 15-minute buffer between blocks).
