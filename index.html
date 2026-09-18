@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Daily Intentionality Scheduler</title>
+<meta name="description" content="Hold a block, stack the day, save it to Calendar." />
+<link rel="manifest" href="./manifest.json" />
+<meta name="theme-color" content="#513723" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Intentional" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+<link rel="preload" href="./fonts/pixelify-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="world" id="world">
+
+    <header class="world__head">
+      <h1 class="daystamp" id="dayStamp">Today</h1>
+      <div class="rail">
+        <div class="anchor">
+          <label class="anchor__label" for="anchorTime">Day starts</label>
+          <input type="time" id="anchorTime" class="anchor__input" value="08:00" />
+        </div>
+        <p class="tally" id="tally">Nothing stacked yet.</p>
+      </div>
+    </header>
+
+    <main class="field">
+      <section class="held" id="held" aria-label="Block in hand"></section>
+      <p class="overrun" id="wrapBanner" hidden>
+        This day now runs past midnight. The blocks after 12:00 AM land on tomorrow's calendar.
+      </p>
+      <div class="xp">
+        <div class="xp__track" aria-hidden="true">
+          <div class="xp__fill" id="xpFill"></div>
+          <div class="xp__buffer" id="xpBuffer"></div>
+        </div>
+        <p class="xp__label" id="xpLabel">Nothing in hand yet.</p>
+      </div>
+    </main>
+
+    <footer class="bar">
+      <button type="button" class="btn btn--stone bar__inv" id="inventoryToggle" aria-expanded="false" aria-controls="inventory">
+        Inventory
+      </button>
+      <ol class="hotbar" id="hotbar" aria-label="Blocks in the day, in order"></ol>
+      <button type="button" class="btn btn--grass bar__save" id="exportButton" disabled>
+        Save &amp; Quit to Calendar
+      </button>
+    </footer>
+
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <section class="chest" id="inventory" role="dialog" aria-modal="true" aria-labelledby="chestTitle" hidden>
+    <h2 class="chest__title" id="chestTitle">Inventory</h2>
+    <p class="chest__hint">Take a block. It stacks onto the end of the day.</p>
+    <div class="chest__grid" id="presetGrid"></div>
+    <p class="chest__keys">1–9 holds a slot · E opens this chest · Esc closes it</p>
+    <button type="button" class="btn btn--stone chest__close" id="inventoryClose">Back to the day</button>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toastMessage"></span>
+    <button type="button" class="btn btn--stone toast__undo" id="toastUndo" hidden>Undo</button>
+  </div>
+
+  <script src="./scheduler.js" defer></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>

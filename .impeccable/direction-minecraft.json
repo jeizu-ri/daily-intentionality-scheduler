@@ -1,0 +1,176 @@
+{
+  "title": "Choose a Minecraft-like world",
+  "question": "You rejected the timetable. Binding vibe: Minecraft (blocks, inventory, dirt/stone/grass, chunky pixels). Same job: stack periods from a start time, 15-minute buffer, +15, export to Calendar. Code-led — pick a card to build.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Pause screen",
+      "kicker": "THE ROLL",
+      "lineage": "Minecraft title / pause menu",
+      "thesis": "The day is a dirt-field pause menu: stone-brick buttons, one hotspot row, Done writes the world to Calendar.",
+      "palette": ["#3A2A1A", "#7A7A7A", "#5A8C3A", "#E0D4A8"],
+      "materials": ["dirt panorama", "stone-cut buttons", "pixel face at two sizes"],
+      "viewport": "Full-bleed dirt. Title is today’s date in chunky type. Periods are a vertical stack of stone buttons with clocks on the left. Hotbar of stamps along the bottom. Done = Post to Calendar.",
+      "risk": "Reads as a settings screen if the buttons stay generic ‘options’ instead of timed blocks.",
+      "raised": [
+        { "from": "cracktro", "raise": "One bitmap face, only two sizes. No third font." },
+        { "from": "iridescent-cloud", "raise": "Color lives on the grass rim of a block, not a page wash." },
+        { "from": "gravity-rain", "raise": "One biome sky. Do not switch worlds mid-day." }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "date title", "x": 2, "y": 0, "w": 8, "h": 1 },
+          { "label": "stone period stack", "x": 2, "y": 1, "w": 8, "h": 6, "accent": true },
+          { "label": "hotbar stamps", "x": 1, "y": 7, "w": 10, "h": 2 },
+          { "label": "Done", "x": 4, "y": 9, "w": 4, "h": 1, "accent": true }
+        ]
+      }
+    },
+    {
+      "id": "model-pick",
+      "label": "Hotbar day",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Survival HUD hotbar",
+      "thesis": "Each intention is a stack in the hotbar. The selected slot is the live block; +15 grows the stack; the day is what you are holding.",
+      "palette": ["#2B2B2B", "#8B8B8B", "#3D6E1A", "#C4A44A"],
+      "materials": ["hotbar slots", "item icons", "XP-bar buffer"],
+      "viewport": "Center: the held block with its clock. Bottom: 9 slots (stamps + filled periods). XP bar under the hotbar is the 15-minute buffer. Inventory key opens the full list. Export is ‘Save & Quit to Calendar’.",
+      "risk": "This is the most familiar Minecraft UI. It can look like a texture pack on a todo list if the slots are stickers.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "held block", "x": 3, "y": 1, "w": 6, "h": 4, "accent": true },
+          { "label": "clock readout", "x": 3, "y": 5, "w": 6, "h": 1 },
+          { "label": "xp buffer bar", "x": 2, "y": 7, "w": 8, "h": 1 },
+          { "label": "hotbar", "x": 1, "y": 8, "w": 10, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-map",
+      "label": "Explorer map",
+      "verdict": "wins",
+      "lineage": "Orienteering map × Minecraft empty map",
+      "thesis": "The overworld map is the sheet. Periods are purple control points. +15 redraws the course line.",
+      "palette": ["#C2B280", "#3D6E1A", "#4A6FA5", "#7A3FBF"],
+      "materials": ["map paper", "land/water inks", "enchanting purple course"],
+      "viewport": "Beige map filling the iPad. Numbered purple circles are periods. Legend = stamps. Copy map = Calendar.",
+      "case": "Beats pause-menu on identification (you already asked for Minecraft) and on clarity (a course you can read).",
+      "risk": "Looks like a gimmick map if the purple line is decoration and the times live in a sidebar.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-orienteering-map-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/notation-diagram-systems-orienteering-map.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "map field", "x": 0, "y": 0, "w": 9, "h": 8, "accent": true },
+          { "label": "legend stamps", "x": 9, "y": 0, "w": 3, "h": 8 },
+          { "label": "copy map", "x": 9, "y": 8, "w": 3, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-rail",
+      "label": "Item rail",
+      "verdict": "competitive",
+      "lineage": "Film cutting bench as an item rail",
+      "thesis": "Periods hang on a hopper rail like items on a track. The flag is where you stopped. +15 punches the next frames forward.",
+      "palette": ["#1A1A1A", "#8B5A2B", "#C4A44A", "#5A8C3A"],
+      "materials": ["dark oak", "item frames", "gold nugget flag"],
+      "viewport": "One horizontal rail of item frames at mid-height. Stamps sit in a chest row under it. Export unloads the rail.",
+      "case": "Holds clarity (sequence on a rail). Identification only after Minecraft translation; as film it would lose.",
+      "risk": "A long rail on iPad can become a tiny strip of icons without clocks.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "item rail", "x": 0, "y": 3, "w": 12, "h": 3, "accent": true },
+          { "label": "chest stamps", "x": 0, "y": 7, "w": 9, "h": 3 },
+          { "label": "unload", "x": 9, "y": 7, "w": 3, "h": 3 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-chest",
+      "label": "Item catalog",
+      "verdict": "competitive",
+      "lineage": "Character-goods grid as a double chest",
+      "thesis": "Presets are items in a chest grid. The day is the hotbar you fill from that chest.",
+      "palette": ["#6B4A2A", "#C4A574", "#2B2B2B", "#5A8C3A"],
+      "materials": ["chest pixels", "slot highlight", "item nameplates"],
+      "viewport": "Double-chest of stamps on top; the day’s taken items in a row beneath. Tooltip shows clock times. Close chest exports.",
+      "case": "Holds identification (inventory is home). Loses some clarity: times hide in tooltips unless printed on the slot.",
+      "risk": "If times are only in hover, the iPad job fails.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-character-goods-catalog-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-character-goods-catalog.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "chest grid", "x": 1, "y": 1, "w": 10, "h": 5, "accent": true },
+          { "label": "taken row", "x": 1, "y": 6, "w": 10, "h": 2 },
+          { "label": "close / export", "x": 4, "y": 8, "w": 4, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-cracktro",
+      "label": "Void scroller",
+      "verdict": "declined",
+      "lineage": "Cracktro queue",
+      "thesis": "The day is a bitmap ticker on black, with no boxes.",
+      "palette": ["#000000", "#E8E0D0", "#E3B23C"],
+      "materials": ["bitmap dust", "no boxes"],
+      "viewport": "Black void, scrolling period names, clocks as gold dust.",
+      "risk": "You cannot tap a block that is not there.",
+      "case": "Minecraft is boxes. A boxless void fails the pin and hides clocks.",
+      "kept": "One pixel face, two sizes only.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-cracktro-scroller-queue-hero.webp"
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Cloud edge",
+      "verdict": "declined",
+      "lineage": "Iridescent cloud",
+      "thesis": "The day dissolves into a pastel weather wash.",
+      "palette": ["#F4F7FA", "#9AE6B4", "#C4B5FD", "#FFFFFF"],
+      "materials": ["pastel fringe", "soft fog"],
+      "viewport": "Pale sky, periods as cloud labels.",
+      "risk": "Looks like the AI weather app, not a block world.",
+      "case": "Weather pastel is not a block game.",
+      "kept": "Accent only on a block’s rim.",
+      "hero": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge-hero.webp"
+    },
+    {
+      "id": "challenger-rain",
+      "label": "Gravity garden",
+      "verdict": "declined",
+      "lineage": "Gravity-rain garden",
+      "thesis": "Periods fall upward through a dusk garden.",
+      "palette": ["#2F4A3A", "#7EE0D6", "#1A2A22", "#E8D9A0"],
+      "materials": ["dusk garden", "impossible rain"],
+      "viewport": "Night plants, times raining the wrong way.",
+      "risk": "Pretty, and useless for stacking a morning.",
+      "case": "Surreal rain is not this planner and not Minecraft.",
+      "kept": "One biome; do not change worlds mid-day.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-gravity-rain-garden-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A calm split-view planner. The AI default you asked to leave.",
+    "palette": ["#F8F9FA", "#1E293B", "#C47A3F"],
+    "materials": ["glass", "display serif"],
+    "viewport": "Two cream panels. Caslon title.",
+    "risk": "Looks generated. You already rejected this family."
+  },
+  "steer": true
+}

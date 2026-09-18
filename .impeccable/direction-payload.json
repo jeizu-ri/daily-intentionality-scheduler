@@ -1,0 +1,159 @@
+{
+  "title": "Choose the visual world",
+  "question": "Replacement look for Daily Intentionality. Same job: stack blocks, 15-minute buffer, +15, export to Calendar. The cream/glass/Caslon UI is anti-reference. No image generation this round — code-led.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Period timetable",
+      "kicker": "THE ROLL",
+      "lineage": "Offset-printed school period schedule",
+      "thesis": "The day is one column of periods. Clock times are printed in the margin; you add a class, the rest of the column drops.",
+      "palette": ["#9AA7B2", "#1E3A5F", "#C43C2C", "#EEF2F5"],
+      "materials": ["ditto-blue rules", "cool gray stock", "one period-red"],
+      "viewport": "iPad landscape: left margin is the period clock, the column is the day, add-a-period controls sit as a stamp row under the heading — not a second glass app.",
+      "risk": "Can read as homework if the grid is cute instead of bureaucratic.",
+      "raised": [
+        { "from": "oscilloscope", "raise": "Buffer is etched ticks between periods, a measured 15, not empty padding." },
+        { "from": "ascii-grid", "raise": "Period rows are a rigid cell mask; a block never reflows mid-glyph." },
+        { "from": "mesophotic-dive", "raise": "One vertical axis is the whole route home: morning at the top, export at the bottom of the column." },
+        { "from": "pixorama", "raise": "Crisp integer edges, no blur glass." }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "day heading", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "stamp a period", "x": 0, "y": 1, "w": 12, "h": 2, "accent": true },
+          { "label": "clock margin", "x": 0, "y": 3, "w": 2, "h": 6 },
+          { "label": "period column", "x": 2, "y": 3, "w": 10, "h": 6 },
+          { "label": "to calendar", "x": 8, "y": 9, "w": 4, "h": 1, "accent": true }
+        ]
+      }
+    },
+    {
+      "id": "model-pick",
+      "label": "Departure board",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Split-flap station boards",
+      "thesis": "Each intention is a departure: time, destination, duration. +15 is a delay that flips every later row.",
+      "palette": ["#1A1A18", "#C4A44A", "#F2EDE3", "#8B1E1E"],
+      "materials": ["flap modules", "destination black", "delay gold"],
+      "viewport": "A stacked board of rows. Adding a block inserts a flap. Export is ‘post the board’.",
+      "risk": "This is the familiar ‘time as a list of departures’ landing most planner redesigns want; it can look like a novelty clock.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "station header", "x": 0, "y": 0, "w": 12, "h": 2 },
+          { "label": "flap rows", "x": 0, "y": 2, "w": 12, "h": 6, "accent": true },
+          { "label": "add destination", "x": 0, "y": 8, "w": 8, "h": 2 },
+          { "label": "post board", "x": 8, "y": 8, "w": 4, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-cassette",
+      "label": "Deck fascia",
+      "verdict": "competitive",
+      "lineage": "Cassette-futurist tape deck",
+      "thesis": "One bolted fascia: every function is a labeled switch. The day is the tape that is rolling.",
+      "palette": ["#B7A894", "#C5C9CE", "#D4781E", "#1C1C1C"],
+      "materials": ["brushed aluminum", "beige plastic", "amber LED ladder"],
+      "viewport": "No pages. Toggles for kind, a counter for start time, presets as transport keys, timeline as the VU of the day.",
+      "case": "Holds product clarity (one panel, labeled controls). Loses audience identification: hi-fi nerd, not morning iPad.",
+      "risk": "Reads as a synth plugin if the metal is fake.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-cassette-futurism-deck-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-cassette-futurism-deck.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "meter ladder", "x": 0, "y": 0, "w": 12, "h": 2, "accent": true },
+          { "label": "transport keys", "x": 0, "y": 2, "w": 12, "h": 2 },
+          { "label": "tape window", "x": 0, "y": 4, "w": 12, "h": 4 },
+          { "label": "export toggle", "x": 8, "y": 8, "w": 4, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-quotes",
+      "label": "Quoted stockroom",
+      "verdict": "competitive",
+      "lineage": "Industrial streetwear quote grammar",
+      "thesis": "Every zone is named in straight quotes. You are filling “THE DAY”, not a vault.",
+      "palette": ["#F5F5F0", "#111111", "#E85D04", "#D4D4D4"],
+      "materials": ["cotton white", "stenciled caps", "zip-tie orange"],
+      "viewport": "Quoted labels, one diagonal under the live block, orange tag on the selected preset.",
+      "case": "Holds clarity (literal names). Loses identification: stockroom fashion, not a personal planner.",
+      "risk": "Hazard stripes become costume if they do not mean delay or overflow.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "\"THE DAY\"", "x": 0, "y": 0, "w": 12, "h": 2 },
+          { "label": "quoted stamps", "x": 0, "y": 2, "w": 4, "h": 8 },
+          { "label": "the column", "x": 4, "y": 2, "w": 8, "h": 6, "accent": true },
+          { "label": "\"ADD TO CALENDAR\"", "x": 4, "y": 8, "w": 8, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-scope",
+      "label": "Signal bench",
+      "verdict": "declined",
+      "lineage": "CRT oscilloscope",
+      "palette": ["#0C0F0C", "#3DFF6E", "#6A7068", "#E3B23C"],
+      "materials": ["phosphor", "etched graticule"],
+      "case": "A morning iPad planner is not a probe clip. Clarity as waveform fails the stack-and-export job.",
+      "kept": "Measured 15-minute ticks between periods.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench-hero.webp"
+    },
+    {
+      "id": "challenger-ascii",
+      "label": "Glyph scene",
+      "verdict": "declined",
+      "lineage": "Live ASCII render",
+      "palette": ["#001100", "#66FF66"],
+      "materials": ["monospace grid", "density as tone"],
+      "case": "Sculpture-as-text does not identify as planning a day.",
+      "kept": "Rigid cell mask: periods never reflow.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render-hero.webp"
+    },
+    {
+      "id": "challenger-dive",
+      "label": "Wall dive",
+      "verdict": "declined",
+      "lineage": "Mesophotic descent",
+      "palette": ["#041428", "#7EE0D6", "#F4F7F2"],
+      "materials": ["depth blue", "marine snow"],
+      "case": "Scuba topology is not this user's scene; vertical poetry hides the clock.",
+      "kept": "One vertical axis as the only route through the day.",
+      "hero": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive-hero.webp"
+    },
+    {
+      "id": "challenger-pixorama",
+      "label": "Pixel city",
+      "verdict": "declined",
+      "lineage": "eBoy pixorama",
+      "palette": ["#FF0033", "#00CCFF", "#111111"],
+      "materials": ["hard pixels", "isometric blocks"],
+      "case": "A toy metropolis is not a calendar handoff.",
+      "kept": "Crisp integer edges instead of glass blur.",
+      "hero": "https://impeccable.style/worlds/cards/eboy-pixorama-metropolis-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A calm split-view planner: list of blocks, times, one export. The look every AI ships if you ask for a planner.",
+    "palette": ["#F8F9FA", "#1E293B", "#C47A3F"],
+    "materials": ["glass panels", "display serif"],
+    "viewport": "Two cards, cream wash, Caslon title — the incumbent.",
+    "risk": "Indistinguishable from the current UI and from a thousand generated dashboards."
+  },
+  "steer": true
+}

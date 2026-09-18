@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-19T00:00:00Z",
+  "title": "Design System: Daily Intentionality Scheduler",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "primary", "displayName": "Dirt Field", "canonical": "#513723", "tonalRamp": ["#352417", "#5D3F28", "#845939", "#AB744A", "#C0916D", "#D1AF94", "#E5D1C2", "#F7F2ED"] },
+      "ground-deep": { "role": "primary", "displayName": "Deep Ground", "canonical": "#241A10", "tonalRamp": ["#352618", "#5C4229", "#835E3A", "#A97A4B", "#BF966E", "#D0B295", "#E4D4C3", "#F7F2ED"] },
+      "ground-speckle": { "role": "primary", "displayName": "Dirt Speckle", "canonical": "#3E2A1B", "tonalRamp": ["#352417", "#5C3F28", "#835939", "#AB744A", "#C0916D", "#D1AE94", "#E5D1C3", "#F7F2ED"] },
+      "ground-speckle-lt": { "role": "primary", "displayName": "Dirt Speckle Light", "canonical": "#604327", "tonalRamp": ["#362616", "#5E4226", "#865E37", "#AE7947", "#C3966A", "#D3B292", "#E6D3C1", "#F8F2ED"] },
+      "stone": { "role": "neutral", "displayName": "Stone", "canonical": "#8B8B8B", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "stone-lt": { "role": "neutral", "displayName": "Stone Highlight", "canonical": "#ADADAD", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "stone-mid": { "role": "neutral", "displayName": "Stone Hover", "canonical": "#6E6E6E", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "stone-dk": { "role": "neutral", "displayName": "Stone Base", "canonical": "#5A5A5A", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "stone-bevel-dk": { "role": "neutral", "displayName": "Stone Bevel Shadow", "canonical": "#3C3C3C", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "deepslate": { "role": "neutral", "displayName": "Deepslate", "canonical": "#3F3F3F", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "deepslate-lt": { "role": "neutral", "displayName": "Deepslate Highlight", "canonical": "#585858", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "deepslate-dk": { "role": "neutral", "displayName": "Deepslate Shadow", "canonical": "#232323", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "well-dk": { "role": "neutral", "displayName": "Cut Well", "canonical": "#141414", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] },
+      "grass": { "role": "secondary", "displayName": "Grass", "canonical": "#5A8C3A", "tonalRamp": ["#233616", "#3C5E27", "#568537", "#6FAD48", "#8DC26B", "#ACD293", "#D0E6C2", "#F1F8ED"] },
+      "grass-dk": { "role": "secondary", "displayName": "Grass Deep", "canonical": "#3A5C24", "tonalRamp": ["#233716", "#3C5F25", "#568835", "#6FB045", "#8DC469", "#ABD491", "#D0E7C1", "#F1F8ED"] },
+      "grass-lit": { "role": "secondary", "displayName": "Lit Grass", "canonical": "#6EA646", "tonalRamp": ["#243617", "#3E5D27", "#588538", "#72AC49", "#8FC16C", "#ADD293", "#D1E5C2", "#F1F7ED"] },
+      "grass-lit-hi": { "role": "secondary", "displayName": "Lit Grass Highlight", "canonical": "#7FB855", "tonalRamp": ["#243617", "#3E5E27", "#588538", "#73AD48", "#90C16C", "#AED293", "#D1E5C2", "#F1F7ED"] },
+      "grass-lit-speckle": { "role": "secondary", "displayName": "Lit Grass Speckle", "canonical": "#639440", "tonalRamp": ["#243517", "#3E5D28", "#588439", "#72AB4A", "#90C06D", "#ADD194", "#D1E5C2", "#F1F7ED"] },
+      "grass-lit-bevel": { "role": "secondary", "displayName": "Lit Grass Bevel", "canonical": "#8FC96A", "tonalRamp": ["#223814", "#3B6123", "#558B32", "#6EB441", "#8CC766", "#ABD68F", "#CFE8BF", "#F1F8EC"] },
+      "gold": { "role": "secondary", "displayName": "Gold", "canonical": "#C4A44A", "tonalRamp": ["#3A2F13", "#645221", "#8E752E", "#B9983C", "#CCB061", "#D9C58C", "#EADEBE", "#F9F5EC"] },
+      "gold-lt": { "role": "secondary", "displayName": "Gold Light", "canonical": "#E0C264", "tonalRamp": ["#40330D", "#6E5916", "#9D7F1F", "#CCA529", "#DCBA51", "#E6CD7F", "#F1E3B7", "#FBF7EA"] },
+      "gold-dk": { "role": "secondary", "displayName": "Gold Deep", "canonical": "#8A7128", "tonalRamp": ["#3B3111", "#67541E", "#92782A", "#BE9B37", "#D0B35D", "#DDC788", "#ECDFBC", "#F9F6EB"] },
+      "redstone": { "role": "tertiary", "displayName": "Redstone", "canonical": "#A32B22", "tonalRamp": ["#3F110D", "#6E1D17", "#9C2921", "#CB352A", "#DB5C52", "#E58780", "#F0BBB7", "#FBEBEA"] },
+      "redstone-lt": { "role": "tertiary", "displayName": "Redstone Highlight", "canonical": "#C4443A", "tonalRamp": ["#3B1411", "#66231E", "#92332B", "#BD4238", "#CF665E", "#DC8F89", "#EBC0BC", "#F9ECEB"] },
+      "redstone-dk": { "role": "tertiary", "displayName": "Redstone Shadow", "canonical": "#6E1A14", "tonalRamp": ["#410F0C", "#701B14", "#A0261D", "#CF3126", "#DF584E", "#E7857E", "#F2BAB6", "#FBEBE9"] },
+      "xp": { "role": "secondary", "displayName": "Experience Green", "canonical": "#7EDB2E", "tonalRamp": ["#24410B", "#3F7113", "#59A11C", "#74D124", "#91E04D", "#AEE97C", "#D1F2B5", "#F2FBE9"] },
+      "xp-lt": { "role": "secondary", "displayName": "Experience Light", "canonical": "#A6F05C", "tonalRamp": ["#264606", "#42790B", "#5EAD10", "#7AE015", "#96ED40", "#B3F273", "#D4F8B0", "#F2FDE8"] },
+      "text": { "role": "neutral", "displayName": "Paper", "canonical": "#F4F1E8", "tonalRamp": ["#342D19", "#5A4E2B", "#806F3D", "#A6904F", "#BBA972", "#CEC097", "#E3DBC4", "#F7F4EE"] },
+      "text-dim": { "role": "neutral", "displayName": "Paper Dim", "canonical": "#CFC4AC", "tonalRamp": ["#302A1C", "#544931", "#786845", "#9B875A", "#B2A17B", "#C7BA9E", "#DFD8C8", "#F6F4EF"] },
+      "text-disabled": { "role": "neutral", "displayName": "Paper Disabled", "canonical": "#D5CCBA", "tonalRamp": ["#302A1C", "#544931", "#786845", "#9B875A", "#B2A17B", "#C7BA9E", "#DFD8C8", "#F6F4EF"] },
+      "text-ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1E1710", "tonalRamp": ["#32261B", "#56422E", "#7B5E42", "#A07A55", "#B69677", "#CAB29B", "#E1D4C6", "#F6F2EE"] },
+      "biome-morning": { "role": "tertiary", "displayName": "Morning Biome", "canonical": "#5F6E4A", "tonalRamp": ["#272E1F", "#444F35", "#61714C", "#7E9262", "#9AAB82", "#B5C1A4", "#D5DCCB", "#F3F5F0"] },
+      "biome-afternoon": { "role": "tertiary", "displayName": "Afternoon Biome", "canonical": "#6E6045", "tonalRamp": ["#2F291D", "#514733", "#746549", "#96835E", "#AE9E7F", "#C4B8A1", "#DED7CA", "#F5F3EF"] },
+      "biome-evening": { "role": "tertiary", "displayName": "Evening Biome", "canonical": "#4A4E6E", "tonalRamp": ["#1F202E", "#35384F", "#4C5071", "#626892", "#8287AB", "#A4A7C1", "#CBCDDC", "#F0F0F5"] },
+      "inert": { "role": "neutral", "displayName": "Inert", "canonical": "#4A4A4A", "tonalRamp": ["#262626", "#424242", "#5E5E5E", "#7A7A7A", "#969696", "#B3B3B3", "#D4D4D4", "#F2F2F2"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Daystamp, held block name, hollow title, chest title. Drops to 32px/36px below 620px." },
+      "title": { "displayName": "Title", "purpose": "The held block's clock range, in gold with tabular numerals. Same size as Display; separates by weight and colour. Drops to 32px/36px below 620px." },
+      "headline": { "displayName": "Headline", "purpose": "The two committing buttons, +15 min and Save & Quit, set in ink on a bright tile. Drops to 16px/24px below 620px." },
+      "label": { "displayName": "Label", "purpose": "Stone button labels, inventory item names, the bolded value in the XP caption. Drops to 16px/24px below 620px." },
+      "body": { "displayName": "Body", "purpose": "Tally, block metadata, slot clocks and numbers, hints, toast copy, overrun banner. Drops to 16px/24px below 620px." }
+    },
+    "shadows": [
+      { "name": "bevel-raised-stone", "value": "inset 3px 3px 0 #ADADAD, inset -3px -3px 0 #3C3C3C", "purpose": "Stone surfaces that sit on top of the world: buttons, slots, the inventory chest." },
+      { "name": "bevel-raised-deepslate", "value": "inset 3px 3px 0 #585858, inset -3px -3px 0 #232323", "purpose": "Deepslate panels that carry reading: held block, toast, item cards, anchor bar." },
+      { "name": "bevel-raised-gold", "value": "inset 3px 3px 0 #E0C264, inset -3px -3px 0 #8A7128", "purpose": "The +15 min button." },
+      { "name": "bevel-raised-grass", "value": "inset 3px 3px 0 #8FC96A, inset -3px -3px 0 #5A8C3A", "purpose": "The Save & Quit button, using the lit grass set because it carries ink text." },
+      { "name": "bevel-cut-well", "value": "inset 3px 3px 0 #141414, inset -3px -3px 0 #585858", "purpose": "Anything recessed into a panel: hotbar tray, XP track, item well, time field, chest grid." },
+      { "name": "bevel-pressed-stone", "value": "inset 3px 3px 0 #3C3C3C, inset -3px -3px 0 #ADADAD", "purpose": "The :active state of a stone button, paired with translateY(2px)." },
+      { "name": "frame-held", "value": "outline: 3px solid #F4F1E8; outline-offset: 0", "purpose": "The selected hotbar slot's white pixel frame, paired with translateY(-6px)." },
+      { "name": "focus-ring", "value": "outline: 3px solid #E0C264; outline-offset: 2px", "purpose": "Global :focus-visible. Gold, because white already belongs to the held slot." },
+      { "name": "text-pixel-lg", "value": "text-shadow: 3px 3px 0 #241A10", "purpose": "Zero-blur pixel shadow behind display type sitting on the dirt field." },
+      { "name": "text-pixel-sm", "value": "text-shadow: 2px 2px 0 #232323", "purpose": "Zero-blur pixel shadow behind light body type on a dark tile." }
+    ],
+    "motion": [
+      { "name": "step-swap", "value": "90ms steps(3, end)", "purpose": "The held block swapping when a different slot is taken. One frame, no easing." },
+      { "name": "step-ripple", "value": "180ms steps(3, end), staggered 30ms per slot", "purpose": "The +15 ripple travelling down the hotbar, starting at the block you grew." },
+      { "name": "step-chest", "value": "120ms steps(3, end)", "purpose": "The inventory chest rising into place." },
+      { "name": "step-fill", "value": "transform 240ms steps(8, end)", "purpose": "The XP bar's green fill and gold buffer, filling in visible pixel jumps." },
+      { "name": "press-drop", "value": "translateY(2px)", "purpose": "The physical drop on :active, paired with the inverted bevel." }
+    ],
+    "breakpoints": [
+      { "name": "narrow", "value": "900px" },
+      { "name": "phone", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Stone Button",
+      "kind": "button",
+      "refersTo": "button-stone",
+      "description": "The world's neutral action: Inventory, Drop block, Back to the day, Undo.",
+      "html": "<button class=\"ds-btn-stone\">Inventory</button>",
+      "css": ".ds-btn-stone { font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; font-weight: 500; color: #F4F1E8; background-color: #5A5A5A; background-image: url('./assets/stone.svg'); background-size: 64px 64px; image-rendering: pixelated; border: 0; border-radius: 0; padding: 12px 20px; min-height: 52px; cursor: pointer; box-shadow: inset 3px 3px 0 #ADADAD, inset -3px -3px 0 #3C3C3C; text-shadow: 2px 2px 0 #232323; } .ds-btn-stone:hover { background-color: #6E6E6E; } .ds-btn-stone:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; } .ds-btn-stone:active { box-shadow: inset 3px 3px 0 #3C3C3C, inset -3px -3px 0 #ADADAD; transform: translateY(2px); }"
+    },
+    {
+      "name": "Gold Button (+15)",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Grows the held block by 15 minutes and ripples every block after it.",
+      "html": "<button class=\"ds-btn-gold\">+15 min</button>",
+      "css": ".ds-btn-gold { font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; font-weight: 700; color: #1E1710; background-color: #C4A44A; background-image: url('./assets/gold.svg'); background-size: 64px 64px; image-rendering: pixelated; border: 0; border-radius: 0; padding: 12px 20px; min-height: 52px; cursor: pointer; box-shadow: inset 3px 3px 0 #E0C264, inset -3px -3px 0 #8A7128; } .ds-btn-gold:hover { background-color: #E0C264; } .ds-btn-gold:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; } .ds-btn-gold:active { box-shadow: inset 3px 3px 0 #8A7128, inset -3px -3px 0 #E0C264; transform: translateY(2px); }"
+    },
+    {
+      "name": "Grass Button (Save & Quit)",
+      "kind": "button",
+      "refersTo": "button-grass",
+      "description": "The one irreversible commit: writes the day to Calendar. Uses the lit grass set because it carries ink text at 4.5:1.",
+      "html": "<button class=\"ds-btn-grass\">Save &amp; Quit to Calendar</button>",
+      "css": ".ds-btn-grass { font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; font-weight: 700; color: #1E1710; background-color: #6EA646; background-image: url('./assets/grass-side.svg'); background-size: 64px 64px; image-rendering: pixelated; border: 0; border-radius: 0; padding: 12px 20px; min-height: 52px; cursor: pointer; box-shadow: inset 3px 3px 0 #8FC96A, inset -3px -3px 0 #5A8C3A; } .ds-btn-grass:hover { background-color: #7FB855; } .ds-btn-grass:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; } .ds-btn-grass:active { box-shadow: inset 3px 3px 0 #5A8C3A, inset -3px -3px 0 #8FC96A; transform: translateY(2px); } .ds-btn-grass:disabled { cursor: not-allowed; background-image: none; background-color: #4A4A4A; color: #D5CCBA; box-shadow: inset 3px 3px 0 #5C5C5C, inset -3px -3px 0 #333333; }"
+    },
+    {
+      "name": "Hotbar",
+      "kind": "nav",
+      "refersTo": "hotbar",
+      "description": "The day's navigation: nine slots in a recessed tray, biome-tinted, with the held one framed in white and lifted.",
+      "html": "<ol class=\"ds-hotbar\"><li><button class=\"ds-slot\" data-biome=\"morning\"><span class=\"ds-slot-num\">1</span><span class=\"ds-slot-icon\"><svg viewBox=\"0 0 16 16\" shape-rendering=\"crispEdges\"><rect x=\"6\" y=\"3\" width=\"4\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"5\" y=\"4\" width=\"6\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"4\" y=\"5\" width=\"8\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"3\" y=\"6\" width=\"10\" height=\"3\" fill=\"#4AE0D0\"/><rect x=\"4\" y=\"9\" width=\"8\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"5\" y=\"10\" width=\"6\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"6\" y=\"11\" width=\"4\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"7\" y=\"12\" width=\"2\" height=\"1\" fill=\"#2A9E93\"/><rect x=\"6\" y=\"3\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"5\" y=\"4\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"4\" y=\"5\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"3\" y=\"6\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"11\" y=\"7\" width=\"2\" height=\"2\" fill=\"#2A9E93\"/></svg></span><span class=\"ds-slot-clock\">8:00</span></button></li><li><button class=\"ds-slot ds-slot-held\" data-biome=\"afternoon\"><span class=\"ds-slot-num\">2</span><span class=\"ds-slot-icon\"><svg viewBox=\"0 0 16 16\" shape-rendering=\"crispEdges\"><rect x=\"2\" y=\"2\" width=\"12\" height=\"12\" fill=\"#A8965E\"/><rect x=\"3\" y=\"3\" width=\"10\" height=\"10\" fill=\"#E8DCB8\"/><rect x=\"4\" y=\"5\" width=\"8\" height=\"1\" fill=\"#5A4A2A\"/><rect x=\"4\" y=\"7\" width=\"6\" height=\"1\" fill=\"#5A4A2A\"/><rect x=\"4\" y=\"9\" width=\"8\" height=\"1\" fill=\"#5A4A2A\"/><rect x=\"4\" y=\"11\" width=\"4\" height=\"1\" fill=\"#5A4A2A\"/><rect x=\"3\" y=\"3\" width=\"10\" height=\"1\" fill=\"#F5EDD4\"/><rect x=\"3\" y=\"3\" width=\"1\" height=\"10\" fill=\"#F5EDD4\"/></svg></span><span class=\"ds-slot-clock\">1:05</span></button></li><li><span class=\"ds-slot ds-slot-empty\"></span></li></ol>",
+      "css": ".ds-hotbar { list-style: none; margin: 0; padding: 4px; display: grid; grid-template-columns: repeat(3, 76px); gap: 4px; background: #232323; box-shadow: inset 3px 3px 0 #141414, inset -3px -3px 0 #585858; } .ds-hotbar > li { display: grid; } .ds-slot { position: relative; width: 100%; aspect-ratio: 1; display: grid; place-content: center; gap: 2px; padding: 4px; border: 0; border-radius: 0; font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; color: #F4F1E8; background: #5A5A5A; box-shadow: inset 3px 3px 0 #8B8B8B, inset -3px -3px 0 #3C3C3C; cursor: pointer; text-align: center; } .ds-slot[data-biome='morning'] { background: #5F6E4A; } .ds-slot[data-biome='afternoon'] { background: #6E6045; } .ds-slot[data-biome='evening'] { background: #4A4E6E; } .ds-slot-empty { cursor: default; background: #4A4A4A; } .ds-slot-num { position: absolute; top: 2px; left: 4px; color: #CFC4AC; } .ds-slot-icon { display: block; width: 36px; height: 36px; margin: 0 auto; } .ds-slot-icon svg { width: 100%; height: 100%; image-rendering: pixelated; } .ds-slot-clock { display: block; font-variant-numeric: tabular-nums; } .ds-slot-held { box-shadow: inset 3px 3px 0 #ADADAD, inset -3px -3px 0 #8B8B8B; outline: 3px solid #F4F1E8; outline-offset: 0; transform: translateY(-6px); } .ds-slot:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; }"
+    },
+    {
+      "name": "The Block In Hand",
+      "kind": "card",
+      "refersTo": "held-block",
+      "description": "The selected block, shown large: a deepslate panel with a grass cap, a cut item well, the name, the clock range in gold, and the two actions.",
+      "html": "<div class=\"ds-block\"><div class=\"ds-block-grass\"></div><div class=\"ds-block-face\"><span class=\"ds-block-item\"><svg viewBox=\"0 0 16 16\" shape-rendering=\"crispEdges\"><rect x=\"6\" y=\"3\" width=\"4\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"5\" y=\"4\" width=\"6\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"4\" y=\"5\" width=\"8\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"3\" y=\"6\" width=\"10\" height=\"3\" fill=\"#4AE0D0\"/><rect x=\"4\" y=\"9\" width=\"8\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"5\" y=\"10\" width=\"6\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"6\" y=\"11\" width=\"4\" height=\"1\" fill=\"#4AE0D0\"/><rect x=\"6\" y=\"3\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"5\" y=\"4\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"4\" y=\"5\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"3\" y=\"6\" width=\"2\" height=\"1\" fill=\"#B9F7F0\"/><rect x=\"11\" y=\"7\" width=\"2\" height=\"2\" fill=\"#2A9E93\"/><rect x=\"7\" y=\"12\" width=\"2\" height=\"1\" fill=\"#2A9E93\"/></svg></span><h2 class=\"ds-block-title\">Deep Work</h2><p class=\"ds-block-clock\">8:00 – 8:50 AM</p><p class=\"ds-block-meta\">50 min · Morning · slot 1 of 3</p><div class=\"ds-block-acts\"><button class=\"ds-btn-gold\">+15 min</button><button class=\"ds-btn-stone\">Drop block</button></div></div></div>",
+      "css": ".ds-block { background: #3F3F3F; box-shadow: inset 3px 3px 0 #585858, inset -3px -3px 0 #232323; max-width: 760px; font-family: 'Pixelify Sans', 'Courier New', monospace; } .ds-block-grass { height: 24px; background-color: #5A8C3A; background-image: url('./assets/grass-top.svg'); background-size: 64px 24px; background-repeat: repeat-x; image-rendering: pixelated; } .ds-block-face { display: grid; grid-template-columns: 128px 1fr; grid-template-areas: 'item title' 'item clock' 'item meta' 'acts acts'; column-gap: 24px; row-gap: 4px; padding: 32px; align-items: start; } .ds-block-item { grid-area: item; width: 128px; height: 128px; display: grid; place-items: center; background: #232323; box-shadow: inset 3px 3px 0 #141414, inset -3px -3px 0 #585858; } .ds-block-item svg { width: 88px; height: 88px; image-rendering: pixelated; } .ds-block-title { grid-area: title; margin: 0; font-size: 40px; line-height: 48px; font-weight: 700; color: #F4F1E8; } .ds-block-clock { grid-area: clock; margin: 0; font-size: 40px; line-height: 48px; font-weight: 500; color: #E0C264; font-variant-numeric: tabular-nums; } .ds-block-meta { grid-area: meta; margin: 0; font-size: 20px; line-height: 28px; color: #CFC4AC; } .ds-block-acts { grid-area: acts; display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }"
+    },
+    {
+      "name": "Buffer Bar",
+      "kind": "custom",
+      "refersTo": "xp-track",
+      "description": "The 15-minute buffer read as an XP bar: green for the day elapsed, gold butted against it for the buffer that follows.",
+      "html": "<div class=\"ds-xp\"><div class=\"ds-xp-track\"><div class=\"ds-xp-fill\" style=\"--fill: 0.62\"></div><div class=\"ds-xp-buffer\" style=\"--fill: 0.62; --buffer: 0.14\"></div></div><p class=\"ds-xp-label\">Deep Work ends 8:50 AM, then a <b>15 min buffer</b>.</p></div>",
+      "css": ".ds-xp { display: grid; justify-items: center; gap: 8px; width: 100%; max-width: 760px; font-family: 'Pixelify Sans', 'Courier New', monospace; } .ds-xp-track { position: relative; width: 100%; height: 20px; background: #232323; box-shadow: inset 3px 3px 0 #141414, inset -3px -3px 0 #585858; } .ds-xp-fill, .ds-xp-buffer { position: absolute; top: 3px; bottom: 3px; left: 3px; right: 3px; transform-origin: left center; transition: transform 240ms steps(8, end); } .ds-xp-fill { background: #7EDB2E; transform: scaleX(var(--fill, 0)); } .ds-xp-buffer { background: #C4A44A; transform: translateX(calc(var(--fill, 0) * 100%)) scaleX(var(--buffer, 0)); } .ds-xp-label { margin: 0; font-size: 20px; line-height: 28px; color: #CFC4AC; text-align: center; } .ds-xp-label b { color: #F4F1E8; font-weight: 500; }"
+    },
+    {
+      "name": "Anchor Time Field",
+      "kind": "input",
+      "refersTo": "input-time",
+      "description": "The day's start time: a cut well inside the deepslate anchor bar.",
+      "html": "<div class=\"ds-anchor\"><label class=\"ds-anchor-label\" for=\"ds-anchor-time\">Day starts</label><input type=\"time\" id=\"ds-anchor-time\" class=\"ds-anchor-input\" value=\"08:00\" /></div>",
+      "css": ".ds-anchor { display: flex; align-items: center; gap: 8px; background: #3F3F3F; box-shadow: inset 3px 3px 0 #585858, inset -3px -3px 0 #232323; padding: 8px 12px; font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; } .ds-anchor-label { color: #CFC4AC; } .ds-anchor-input { font: inherit; color: #F4F1E8; background: #232323; border: 0; border-radius: 0; padding: 4px 8px; box-shadow: inset 3px 3px 0 #141414, inset -3px -3px 0 #585858; caret-color: #E0C264; } .ds-anchor-input:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; }"
+    },
+    {
+      "name": "Inventory Item",
+      "kind": "chip",
+      "refersTo": "chest-item",
+      "description": "A preset block in the inventory chest grid. Taking one stacks it onto the end of the day.",
+      "html": "<button class=\"ds-item\"><span class=\"ds-item-icon\"><svg viewBox=\"0 0 16 16\" shape-rendering=\"crispEdges\"><rect x=\"2\" y=\"3\" width=\"12\" height=\"11\" fill=\"#8B5A2B\"/><rect x=\"2\" y=\"3\" width=\"12\" height=\"3\" fill=\"#A06A33\"/><rect x=\"2\" y=\"3\" width=\"12\" height=\"1\" fill=\"#B67C3E\"/><rect x=\"2\" y=\"6\" width=\"12\" height=\"1\" fill=\"#5E3C1C\"/><rect x=\"2\" y=\"13\" width=\"12\" height=\"1\" fill=\"#5E3C1C\"/><rect x=\"7\" y=\"5\" width=\"2\" height=\"4\" fill=\"#C0C0C0\"/><rect x=\"7\" y=\"6\" width=\"2\" height=\"1\" fill=\"#6E6E6E\"/></svg></span><span><span class=\"ds-item-name\">Admin</span><span class=\"ds-item-mins\">20 min</span></span></button>",
+      "css": ".ds-item { display: grid; grid-template-columns: 48px 1fr; align-items: center; gap: 12px; padding: 12px; border: 0; border-radius: 0; font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; text-align: left; color: #F4F1E8; background: #3F3F3F; box-shadow: inset 3px 3px 0 #585858, inset -3px -3px 0 #232323; cursor: pointer; min-height: 76px; } .ds-item:hover { background: #585858; } .ds-item:focus-visible { outline: 3px solid #E0C264; outline-offset: 2px; } .ds-item:active { box-shadow: inset 3px 3px 0 #232323, inset -3px -3px 0 #585858; } .ds-item-icon { width: 48px; height: 48px; } .ds-item-icon svg { width: 100%; height: 100%; image-rendering: pixelated; } .ds-item-name { display: block; font-weight: 500; } .ds-item-mins { display: block; color: #CFC4AC; }"
+    },
+    {
+      "name": "Toast",
+      "kind": "custom",
+      "refersTo": "toast",
+      "description": "Transient confirmation above the safe bottom, carrying an Undo cut from stone.",
+      "html": "<div class=\"ds-toast\"><span>Dropped Admin.</span><button class=\"ds-btn-stone ds-toast-undo\">Undo</button></div>",
+      "css": ".ds-toast { display: flex; align-items: center; gap: 16px; padding: 12px 16px; background: #3F3F3F; color: #F4F1E8; font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; box-shadow: inset 3px 3px 0 #585858, inset -3px -3px 0 #232323; } .ds-toast-undo { min-height: 44px; padding: 8px 16px; }"
+    },
+    {
+      "name": "Overrun Banner",
+      "kind": "custom",
+      "refersTo": "overrun-banner",
+      "description": "The one alarm in the world: the day has run past midnight and later blocks land on tomorrow.",
+      "html": "<p class=\"ds-overrun\">This day now runs past midnight. The blocks after 12:00 AM land on tomorrow's calendar.</p>",
+      "css": ".ds-overrun { margin: 0; max-width: 760px; background: #A32B22; color: #F4F1E8; font-family: 'Pixelify Sans', 'Courier New', monospace; font-size: 20px; line-height: 28px; padding: 12px 16px; box-shadow: inset 3px 3px 0 #C4443A, inset -3px -3px 0 #6E1A14; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Hotbar Day",
+    "overview": "The day is a world you are standing in, not a document you are filling out. A dirt field tiles edge to edge at 64px and never stops at a card boundary. Nine numbered slots sit along the bottom like an inventory hotbar; one block is held, raised out of the row by a white pixel frame, and shown large in the middle of the screen at the scale it has in life. The green-and-gold bar under it reads the 15-minute buffer as experience, not as a form field.\n\nEvery surface in this world is cut, not floated. Panels are stone or deepslate, and each one is held by a 3px hard inset bevel — light on the top-left, dark on the bottom-right — which is how a voxel block catches light. There is no radius, no blur, no gradient, no drop shadow under anything. Depth comes from the bevel direction and from stacking a darker well inside a lighter panel. Pressing a control inverts its bevel and drops it 2px, so the button physically goes in.\n\nPixelify Sans is the only face, set at exactly two sizes. Hierarchy is carried by weight, colour, and position instead of a type ramp — the date and the held block's name are the same 40px as its clock, and they separate because one is 700 white and the other is 500 gold. Every painted surface is an authored 16×16 tile scaled up with image-rendering: pixelated, never a photograph or a generated texture. The cream-and-glass dashboard and the printed period timetable are both rejected; this world refuses both outright.",
+    "keyCharacteristics": [
+      "Dirt field (#513723) tiled at 64px over a #241A10 deep ground, edge to edge behind everything",
+      "Every box is a 3px hard inset bevel, light top-left and dark bottom-right; zero radius everywhere",
+      "Pixelify Sans only, at 40px and 20px (32px and 16px below 620px); hierarchy by weight and colour",
+      "Nine hotbar slots, tinted by the biome derived from each block's computed start time",
+      "Green #7EDB2E progress and gold #C4A44A buffer in one XP-style bar",
+      "Authored 16×16 pixel tiles and 16×16 pixel item icons; no photography, no glyph icon font"
+    ],
+    "rules": [
+      { "name": "The Two Grasses Rule", "body": "There are two grass sets and the split is load-bearing. The lit set (grass-lit ground, grass-lit-hi highlight, grass-lit-speckle speckle) belongs to Save & Quit, because that button carries ink text and every pixel of its tile — highlight pixels included — has to clear 4.5:1 against text-ink. The darker set (grass, grass-dk) belongs to the held block's grass cap and any grass surface that carries no text. Do not \"correct\" the button's grass back down to grass; that lowers contrast under live text. Do not raise the cap to the lit set; it has no text to justify the brightness.", "section": "colors" },
+      { "name": "The Field Value Rule", "body": "The field ships at #513723, two values lighter than the #3A2A1A originally named in the direction contract. At 64px tile scale the darker value swallowed the tile speckles and the block seams, and the seams are what make the ground read as stacked blocks. #513723 is also the value carried by theme-color and the manifest. Keep the three in sync.", "section": "colors" },
+      { "name": "The Stone Is Neutral Rule", "body": "Stone is the chrome of every ordinary action. Colour is reserved for meaning: gold grows the day, grass commits it to Calendar, redstone warns that it has run past midnight. A second coloured button on the same screen dilutes all three.", "section": "colors" },
+      { "name": "The One Face, Two Sizes Rule", "body": "Pixelify Sans is the only face in the world, at exactly two sizes: 40px and 20px, dropping to 32px and 16px below 620px. Do not add a third size, a second family, or a system display face to solve a hierarchy problem.", "section": "typography" },
+      { "name": "The Weight-Carries-Rank Rule", "body": "Rank is carried by weight (400 / 500 / 700), colour (text / text-dim / gold-lt), and position — never by a new type step. If two things at the same size need to separate, change the weight or the colour.", "section": "typography" },
+      { "name": "The Tabular Clock Rule", "body": "Every clock, counter, and duration sets font-variant-numeric: tabular-nums, so a slot's time does not jitter when the day ripples.", "section": "typography" },
+      { "name": "The Nine Slots Rule", "body": "The hotbar is always nine slots, filled or empty, at every width. It may wrap and its slots may shrink, but it is never truncated, scrolled, or paged.", "section": "layout" },
+      { "name": "The Field Has No Edge Rule", "body": "The dirt field runs to the viewport edge behind every panel. Do not put the world inside a card, a max-width sheet with visible margins, or a two-panel split.", "section": "layout" },
+      { "name": "The Three-Pixel Bevel Rule", "body": "Every box in this world is a 3px hard inset bevel, light top-left and dark bottom-right. Not 1px, not 4px, not a border. If a surface needs to read as recessed, invert the pair rather than changing the width.", "section": "elevation" },
+      { "name": "The No Blur Rule", "body": "No box-shadow with a blur radius, no filter: blur, no backdrop-filter, no gradient, no glass. A surface is either a flat colour, an authored tile, or a bevel over one of those.", "section": "elevation" },
+      { "name": "The Zero Radius Rule", "body": "border-radius is 0 everywhere, with no exceptions for avatars, pills, or focus rings. A rounded corner does not exist in a voxel world.", "section": "shapes" },
+      { "name": "The Authored Tile Rule", "body": "Every texture in this system is a hand-authored 16×16 SVG committed to assets/, scaled with image-rendering: pixelated. No photography, no CSS gradient standing in for a material, no generated or stock texture.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do run the dirt field (#513723, tiled at 64px) edge to edge behind everything, and keep theme-color and the manifest on the same value.",
+      "Do give every box a 3px hard inset bevel — light top-left, dark bottom-right — and invert the pair for anything that should read as cut into a panel.",
+      "Do keep Pixelify Sans as the only face at exactly two sizes (40 / 20, and 32 / 16 below 620px), separating rank by weight, colour, and position.",
+      "Do use the lit grass set (#6EA646 / #7FB855 / #639440) on any grass surface that carries ink text, and the darker grass / grass-dk on grass that carries none.",
+      "Do set every clock, duration, and counter in tabular numerals.",
+      "Do keep all nine hotbar slots visible at every width, and derive a slot's biome tint from its computed start time rather than asking for it.",
+      "Do author new textures as 16×16 SVG tiles in assets/ and scale them with image-rendering: pixelated.",
+      "Do time motion with steps() and keep it under 240ms."
+    ],
+    "donts": [
+      "Don't round a corner, blur a shadow, add a gradient, or introduce glass anywhere in this world.",
+      "Don't darken the field back toward #3A2A1A; at 64px that value swallows the tile speckles and the block seams.",
+      "Don't lower Save & Quit's grass to #5A8C3A or raise the held block's grass cap to the lit set; the two grasses exist for contrast reasons, not by accident.",
+      "Don't add a third type size, a second family, or a system display face.",
+      "Don't put a second gold or grass button on a screen; stone is the neutral and colour is reserved for grow, commit, and overrun.",
+      "Don't replace the pixel item art with an icon font, a glyph, or an emoji.",
+      "Don't put the world inside a card, a two-panel split, or a bordered sheet.",
+      "Don't ease an animation; if it does not step, it does not belong here."
+    ]
+  }
+}

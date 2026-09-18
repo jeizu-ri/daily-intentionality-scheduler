@@ -1,0 +1,30 @@
+{
+  "name": "Daily Intentionality Scheduler",
+  "short_name": "Intentional",
+  "description": "Hold a block, stack the day on a nine-slot hotbar, then save it to Calendar. Built for iPad.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./index.html",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
+  "orientation": "any",
+  "background_color": "#513723",
+  "theme_color": "#513723",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["productivity", "lifestyle"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Pixelify Sans
+Source: https://cdn.jsdelivr.net/fontsource/fonts/pixelify-sans@latest/latin-{400,500,700}-normal.woff2
+License: SIL Open Font License 1.1
+Role: sole face � pixel display and pixel body for the hotbar world
+
